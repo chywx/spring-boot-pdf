@@ -27,6 +27,14 @@
       <version>5.5.13.2</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/com.itextpdf.tool/xmlworker -->
+    <dependency>
+      <groupId>com.itextpdf.tool</groupId>
+      <artifactId>xmlworker</artifactId>
+      <version>5.5.13.2</version>
+    </dependency>
+
+
     <!-- https://mvnrepository.com/artifact/com.itextpdf/itext-asian -->
     <dependency>
       <groupId>com.itextpdf</groupId>
