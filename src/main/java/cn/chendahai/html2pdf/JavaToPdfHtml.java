@@ -6,6 +6,7 @@ package cn.chendahai.html2pdf;/**
 
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Image;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerFontProvider;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
@@ -40,6 +41,16 @@ public class JavaToPdfHtml {
         XMLWorkerHelper.getInstance().parseXHtml(writer, document,
             new FileInputStream(HTML), null, Charset.forName("UTF-8"), fontImp);
         // step 5
+
+        addImage(document);
         document.close();
+    }
+
+    private static void addImage(Document document) throws IOException, DocumentException {
+        Image image = Image
+            .getInstance("https://img-blog.csdn.net/20180801174617455?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zNzg0ODcxMA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70");
+        image.setAlignment(Image.ALIGN_CENTER);
+        image.scalePercent(40); //依照比例缩放
+        document.add(image);
     }
 }
