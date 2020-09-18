@@ -26,8 +26,8 @@ public class JavaToPdfHtmlFreeMarker {
 
     private static final String DEST = "target/HelloWorld_CN_HTML_FREEMARKER_FS.pdf";
     private static final String HTML = "template_freemarker_fs.ftl";
-    //    private static final String LOGO_PATH = "file://" + "src/main/resources/" + "/static/img/baobao.png";
-    private static final String LOGO_PATH = "file:///D:/project/javaproject/spring-boot-pdf/src/main/resources/static/img/baobao.png";
+//    private static final String LOGO_PATH = "file:///D:/project/javaproject/spring-boot-pdf/src/main/resources/static/img/baobao.png";
+    private static final String LOGO_PATH = "http://gg.chendahai.cn/static/image/baobao.png";
 
     private static Configuration freemarkerCfg = null;
 
