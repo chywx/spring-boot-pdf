@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-<img src="logo.png" width="600px"/>
+<img src="baobao.png" width="600px"/>
 <div class="color pos">
     hello,${name}
 </div>

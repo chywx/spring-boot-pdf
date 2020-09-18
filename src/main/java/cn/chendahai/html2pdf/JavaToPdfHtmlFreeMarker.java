@@ -5,7 +5,6 @@ package cn.chendahai.html2pdf;/**
  */
 
 import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.pdf.BaseFont;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import java.io.File;
@@ -15,7 +14,6 @@ import java.io.StringWriter;
 import java.io.Writer;
 import java.util.HashMap;
 import java.util.Map;
-import org.xhtmlrenderer.pdf.ITextFontResolver;
 import org.xhtmlrenderer.pdf.ITextRenderer;
 
 /**
@@ -28,9 +26,8 @@ public class JavaToPdfHtmlFreeMarker {
 
     private static final String DEST = "target/HelloWorld_CN_HTML_FREEMARKER_FS.pdf";
     private static final String HTML = "template_freemarker_fs.ftl";
-    //        private static final String FONT = "simhei.ttf";
-//    private static final String LOGO_PATH = "file://" + "src/main/resources/" + "/static/img/baobao.png";
-    private static final String LOGO_PATH = "file:///D:/project/javaproject/spring-boot-pdf/src/main/resources/static/img/logo.png";
+    //    private static final String LOGO_PATH = "file://" + "src/main/resources/" + "/static/img/baobao.png";
+    private static final String LOGO_PATH = "file:///D:/project/javaproject/spring-boot-pdf/src/main/resources/static/img/baobao.png";
 
     private static Configuration freemarkerCfg = null;
 
@@ -76,10 +73,8 @@ public class JavaToPdfHtmlFreeMarker {
         return null;
     }
 
-    public static void createPdf(String content, String dest) throws IOException, DocumentException, com.lowagie.text.DocumentException {
+    public static void createPdf(String content, String dest) throws IOException, com.lowagie.text.DocumentException {
         ITextRenderer render = new ITextRenderer();
-        ITextFontResolver fontResolver = render.getFontResolver();
-//        fontResolver.addFont(FONT, BaseFont.IDENTITY_H, BaseFont.NOT_EMBEDDED);
         // 解析html生成pdf
         render.setDocumentFromString(content);
         //解决图片相对路径的问题
