@@ -21,11 +21,10 @@
 // * @author chy
 // * @date 2020/9/18 0018
 // */
-//public class JavaToPdfHtml {
+//public class JavaToPdfHtmlBet {
 //
-//    private static final String DEST = "target/HelloWorld_CN_HTML.pdf";
-//    private static final String HTML = "src/main/resources/" + "/static/hello.html";
-//    private static final String FONT = "simhei.ttf";
+//    private static final String DEST = "target/bet-football.pdf";
+//    private static final String HTML = "src/main/resources/" + "/templates/betPrint/index2.html";
 //
 //
 //    public static void main(String[] args) throws IOException, DocumentException {
