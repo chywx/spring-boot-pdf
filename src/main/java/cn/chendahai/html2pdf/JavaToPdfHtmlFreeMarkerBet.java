@@ -27,11 +27,10 @@ public class JavaToPdfHtmlFreeMarkerBet {
 
     private static final String DEST = "target/bet-gg.pdf";
     private static final String HTML = "index7.html";
-//    private static final String LOGO_PATH = "file:///D:/project/javaproject/spring-boot-pdf/src/main/resources/static/img/baobao.png";
 
-    private static final String IMG_PATH = "file:///D:/project/javaproject/spring-boot-pdf/src/main/resources/templates/betPrint/";
+    private static final String IMG_PATH = "file:///D:/project/javaproject/spring-boot-pdf/src/main/resources/static/";
 
-    private static Configuration freemarkerCfg = null;
+    private static Configuration freemarkerCfg;
 
     static {
         freemarkerCfg = new Configuration();
